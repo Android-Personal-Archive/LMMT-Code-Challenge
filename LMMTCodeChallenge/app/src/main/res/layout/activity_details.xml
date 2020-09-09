@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
+
+    <Toolbar
+        android:id="@+id/tb_title_details"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#000000"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/tb_title_details"
+        app:layout_constraintTop_toTopOf="@id/tb_title_details"
+        app:layout_constraintStart_toStartOf="@id/tb_title_details"
+        tools:layout_editor_absoluteX="20dp"
+        tools:text="Kill Bill Vol. 9" />
+
+    <TextView
+        android:id="@+id/tv_release_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        tools:text="(2020)"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_title_details"
+        app:layout_constraintStart_toEndOf="@id/tv_title_details"/>
+
+    <ImageView
+        android:id="@+id/iv_popular_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/ic_baseline_star_24"
+        app:layout_constraintStart_toStartOf="@id/tb_title_details"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_details"
+        app:layout_constraintBottom_toBottomOf="@id/tb_title_details"/>
+
+    <TextView
+        android:id="@+id/tv_popularity_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textColor="#ffffff"
+        tools:text="1681.627"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_details"
+        app:layout_constraintBottom_toBottomOf="@id/tb_title_details"
+        app:layout_constraintStart_toEndOf="@id/iv_popular_star"/>
+
+    <Toolbar
+        android:id="@+id/tb_genres_details"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/cardview_dark_background"
+        app:layout_constraintTop_toBottomOf="@id/tb_title_details"/>
+
+    <TextView
+        android:id="@+id/tv_genres_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        tools:text="Action | Adventure | Uhh | Coolbeans"
+        app:layout_constraintBottom_toBottomOf="@id/tb_genres_details" />
+
+    <ImageView
+        android:id="@+id/iv_thumb_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:src="@tools:sample/avatars"
+        app:layout_constraintTop_toBottomOf="@id/tb_genres_details"/>
+
+    <TextView
+        android:id="@+id/tv_overview_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/iv_thumb_details"
+        tools:text="@tools:sample/lorem/random"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
