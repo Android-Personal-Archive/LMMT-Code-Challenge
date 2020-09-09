@@ -1,11 +1,8 @@
-package com.mcs.lmmtcodechallenge
+package com.mcs.lmmtcodechallenge.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.mcs.lmmtcodechallenge.pokos.GenresPOKO
-import com.mcs.lmmtcodechallenge.pokos.ResultPOKO
-import com.squareup.picasso.Picasso
-import kotlinx.android.synthetic.main.activity_details.*
+import com.mcs.lmmtcodechallenge.R
 
 class DetailsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

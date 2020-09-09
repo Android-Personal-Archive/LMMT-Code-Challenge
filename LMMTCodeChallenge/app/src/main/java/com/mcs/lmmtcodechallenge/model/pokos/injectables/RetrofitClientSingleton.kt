@@ -1,7 +1,5 @@
-package com.mcs.lmmtcodechallenge.injectables
+package com.mcs.lmmtcodechallenge.model.pokos.injectables
 
-import okhttp3.OkHttpClient
-import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 

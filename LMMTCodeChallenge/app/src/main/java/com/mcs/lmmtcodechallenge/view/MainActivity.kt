@@ -1,17 +1,18 @@
-package com.mcs.lmmtcodechallenge
+package com.mcs.lmmtcodechallenge.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.mcs.lmmtcodechallenge.adapters.MoviesAdapter
-import com.mcs.lmmtcodechallenge.injectables.RetrofitClientSingleton
-import com.mcs.lmmtcodechallenge.interfaces.IGetGenresService
-import com.mcs.lmmtcodechallenge.interfaces.IGetMoviesService
-import com.mcs.lmmtcodechallenge.pokos.GenresPOKO
-import com.mcs.lmmtcodechallenge.pokos.MoviesPOKO
-import com.mcs.lmmtcodechallenge.pokos.ResultPOKO
+import com.mcs.lmmtcodechallenge.R
+import com.mcs.lmmtcodechallenge.view.adapters.MoviesAdapter
+import com.mcs.lmmtcodechallenge.model.pokos.injectables.RetrofitClientSingleton
+import com.mcs.lmmtcodechallenge.model.pokos.interfaces.IGetGenresService
+import com.mcs.lmmtcodechallenge.model.pokos.interfaces.IGetMoviesService
+import com.mcs.lmmtcodechallenge.model.pokos.GenresPOKO
+import com.mcs.lmmtcodechallenge.model.pokos.MoviesPOKO
+import com.mcs.lmmtcodechallenge.model.pokos.ResultPOKO
 import kotlinx.android.synthetic.main.activity_main.*
 import retrofit2.Call
 import retrofit2.Callback

@@ -1,6 +1,6 @@
-package com.mcs.lmmtcodechallenge.interfaces
+package com.mcs.lmmtcodechallenge.model.pokos.interfaces
 
-import com.mcs.lmmtcodechallenge.pokos.MoviesPOKO
+import com.mcs.lmmtcodechallenge.model.pokos.MoviesPOKO
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query

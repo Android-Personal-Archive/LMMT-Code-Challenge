@@ -1,4 +1,4 @@
-package com.mcs.lmmtcodechallenge.pokos
+package com.mcs.lmmtcodechallenge.model.pokos
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize

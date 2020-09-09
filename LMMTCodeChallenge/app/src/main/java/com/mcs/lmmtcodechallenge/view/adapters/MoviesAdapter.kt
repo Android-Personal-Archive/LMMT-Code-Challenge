@@ -1,4 +1,4 @@
-package com.mcs.lmmtcodechallenge.adapters
+package com.mcs.lmmtcodechallenge.view.adapters
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -8,9 +8,9 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.mcs.lmmtcodechallenge.R
-import com.mcs.lmmtcodechallenge.pokos.GenresPOKO
-import com.mcs.lmmtcodechallenge.pokos.MoviesPOKO
-import com.mcs.lmmtcodechallenge.pokos.ResultPOKO
+import com.mcs.lmmtcodechallenge.model.pokos.GenresPOKO
+import com.mcs.lmmtcodechallenge.model.pokos.MoviesPOKO
+import com.mcs.lmmtcodechallenge.model.pokos.ResultPOKO
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.movie_item_layout.view.*
 
