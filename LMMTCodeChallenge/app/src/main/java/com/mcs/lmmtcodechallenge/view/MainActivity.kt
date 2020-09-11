@@ -70,11 +70,8 @@ class MainActivity : AppCompatActivity(), MoviesAdapter.OnMovieItemClickListener
     override fun onItemClick(movieItem: ResultPOKO, genresItem: GenresPOKO,  position: Int) {
         var intent = Intent(this, DetailsActivity::class.java)
 
-        /*
         intent.putExtra("Extra Detail Movie Data", movieItem)
         intent.putExtra("Extra Detail Genre Data", genresItem)
-        */
-
         startActivity(intent)
     }
 }

@@ -1,14 +1,19 @@
 package com.mcs.lmmtcodechallenge.view
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.mcs.lmmtcodechallenge.R
+import com.mcs.lmmtcodechallenge.model.pokos.GenresPOKO
+import com.mcs.lmmtcodechallenge.model.pokos.ResultPOKO
+import com.squareup.picasso.Picasso
+import kotlinx.android.synthetic.main.activity_details.*
 
 class DetailsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_details)
-        /*
+
         val movieItem = intent.getParcelableExtra<ResultPOKO>("Extra Detail Movie Data")
         val genresItem = intent.getParcelableExtra<GenresPOKO>("Extra Detail Genre Data")
 
@@ -31,6 +36,6 @@ class DetailsActivity : AppCompatActivity() {
 
         Picasso.get().load("https://image.tmdb.org/t/p/w500/${movieItem?.posterPath}").into(iv_thumb_details)
         tv_overview_details.text = movieItem?.overview
-        */
+
     }
 }
